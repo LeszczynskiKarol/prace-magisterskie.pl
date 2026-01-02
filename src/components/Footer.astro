@@ -1,0 +1,116 @@
+---
+const currentYear = new Date().getFullYear();
+
+const footerLinks = {
+  kierunki: [
+    { href: '/kierunki/socjologia', label: 'Socjologia' },
+    { href: '/kierunki/psychologia', label: 'Psychologia' },
+    { href: '/kierunki/pedagogika', label: 'Pedagogika' },
+    { href: '/kierunki/prawo', label: 'Prawo' },
+    { href: '/kierunki/ekonomia', label: 'Ekonomia' },
+    { href: '/kierunki/zarzadzanie', label: 'Zarządzanie' },
+  ],
+  informacje: [
+    { href: '/jak-to-dziala', label: 'Jak to działa' },
+    { href: '/blog', label: 'Blog' },
+    { href: '/cennik', label: 'Cennik' },
+    { href: '/faq', label: 'FAQ' },
+  ],
+  prawne: [
+    { href: '/regulamin', label: 'Regulamin' },
+    { href: '/polityka-prywatnosci', label: 'Polityka prywatności' },
+  ],
+};
+---
+
+<footer class="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+  <div class="container-custom section-padding">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
+      <!-- Brand -->
+      <div class="col-span-2 md:col-span-1">
+        <a href="/" class="flex items-center gap-2 mb-4">
+          <div class="w-10 h-10 bg-gradient-to-br from-primary-600 to-accent-600 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <span class="text-lg font-display font-bold text-gray-900 dark:text-white">
+            Prace-Magisterskie<span class="text-primary-600">.pl</span>
+          </span>
+        </a>
+        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+          Profesjonalne wsparcie AI przy pisaniu prac magisterskich. Skorzystaj z inteligentnego asystenta Smart-Edu.ai.
+        </p>
+        <a 
+          href="https://smart-edu.ai" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="btn-primary text-sm"
+        >
+          Wypróbuj Smart-Edu.ai
+        </a>
+      </div>
+
+      <!-- Kierunki -->
+      <div>
+        <h4 class="font-display font-bold text-gray-900 dark:text-white mb-4">Kierunki</h4>
+        <ul class="space-y-2">
+          {footerLinks.kierunki.map((link) => (
+            <li>
+              <a 
+                href={link.href} 
+                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Informacje -->
+      <div>
+        <h4 class="font-display font-bold text-gray-900 dark:text-white mb-4">Informacje</h4>
+        <ul class="space-y-2">
+          {footerLinks.informacje.map((link) => (
+            <li>
+              <a 
+                href={link.href} 
+                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Prawne -->
+      <div>
+        <h4 class="font-display font-bold text-gray-900 dark:text-white mb-4">Prawne</h4>
+        <ul class="space-y-2">
+          {footerLinks.prawne.map((link) => (
+            <li>
+              <a 
+                href={link.href} 
+                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-gray-500 dark:text-gray-500 text-sm">
+        © {currentYear} Prace-Magisterskie.pl. Wszelkie prawa zastrzeżone.
+      </p>
+      <p class="text-gray-500 dark:text-gray-500 text-sm">
+        Powered by <a href="https://smart-edu.ai" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:underline">Smart-Edu.ai</a>
+      </p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,126 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Features from '../components/Features.astro';
+import Process from '../components/Process.astro';
+import Subjects from '../components/Subjects.astro';
+import FAQ from '../components/FAQ.astro';
+import CTA from '../components/CTA.astro';
+
+// SEO Configuration
+const seoTitle = "Pisanie prac magisterskich z AI | Prace mgr na zamówienie | Prace-Magisterskie.pl";
+const seoDescription = "Pisanie prac magisterskich i prac mgr na zamówienie z pomocą sztucznej inteligencji. Generuj unikalne prace magisterskie na zlecenie w minuty. 100% oryginalny tekst, bez plagiatów. Wypróbuj za darmo!";
+const seoKeywords = [
+  "pisanie prac magisterskich",
+  "pisanie prac mgr",
+  "prace magisterskie na zamówienie",
+  "prace magisterskie na zlecenie",
+  "pisanie prac magisterskich na zamówienie",
+  "pisanie prac mgr na zamówienie",
+  "pisanie prac mgr na zlecenie",
+  "praca magisterska",
+  "praca mgr",
+  "pomoc w pisaniu pracy magisterskiej",
+  "pisanie prac dyplomowych"
+];
+---
+
+<Layout title={seoTitle} description={seoDescription} keywords={seoKeywords}>
+  <Hero />
+  
+  <!-- SEO Content Section -->
+  <section class="section-padding bg-white dark:bg-gray-950">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-6">
+          Profesjonalne <span class="gradient-text">pisanie prac magisterskich</span> z pomocą AI
+        </h2>
+        
+        <p class="text-lg text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+          Pisanie prac magisterskich to wyzwanie, przed którym staje każdy student kończący studia wyższe. 
+          Tradycyjne metody - samodzielne pisanie przez wiele tygodni lub zamawianie prac u redaktorów - 
+          są czasochłonne i kosztowne. <strong class="text-gray-900 dark:text-white">Smart-Edu.ai</strong> oferuje nowoczesne rozwiązanie: 
+          inteligentnego asystenta AI, który pomoże Ci napisać profesjonalną pracę magisterską 
+          w znacznie krótszym czasie.
+        </p>
+
+        <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+          Nasze narzędzie do <strong class="text-gray-900 dark:text-white">pisania prac mgr na zamówienie</strong> wykorzystuje najnowszą 
+          technologię sztucznej inteligencji. Dzięki temu możesz wygenerować unikalny, merytoryczny 
+          tekst dostosowany do Twojego tematu, kierunku studiów i wymagań promotora. 
+          <strong class="text-gray-900 dark:text-white">Pisanie prac magisterskich na zlecenie</strong> nigdy nie było tak proste i szybkie.
+        </p>
+
+        <h3 class="text-2xl font-display font-bold text-gray-900 dark:text-white mb-4">
+          Dlaczego warto wybrać AI do pisania pracy magisterskiej?
+        </h3>
+
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-start gap-3 text-gray-600 dark:text-gray-400">
+            <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span><strong class="text-gray-900 dark:text-white">Oszczędność czasu</strong> - praca gotowa w godziny, nie tygodnie</span>
+          </li>
+          <li class="flex items-start gap-3 text-gray-600 dark:text-gray-400">
+            <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span><strong class="text-gray-900 dark:text-white">100% unikalności</strong> - każdy tekst generowany jest od podstaw</span>
+          </li>
+          <li class="flex items-start gap-3 text-gray-600 dark:text-gray-400">
+            <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span><strong class="text-gray-900 dark:text-white">Niższe koszty</strong> - znacznie taniej niż tradycyjne usługi pisania prac</span>
+          </li>
+          <li class="flex items-start gap-3 text-gray-600 dark:text-gray-400">
+            <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span><strong class="text-gray-900 dark:text-white">Pełna kontrola</strong> - edytuj, poprawiaj, dostosowuj do swoich potrzeb</span>
+          </li>
+          <li class="flex items-start gap-3 text-gray-600 dark:text-gray-400">
+            <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span><strong class="text-gray-900 dark:text-white">Profesjonalna bibliografia</strong> - automatyczne formatowanie źródeł</span>
+          </li>
+        </ul>
+
+        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+          Niezależnie czy potrzebujesz <strong class="text-gray-900 dark:text-white">pracy magisterskiej na zamówienie</strong> z socjologii, 
+          psychologii, pedagogiki, prawa czy zarządzania - Smart-Edu.ai pomoże Ci na każdym etapie: 
+          od wyboru tematu, przez tworzenie konspektu, aż po gotową, sformatowaną pracę z bibliografią.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <Features />
+  <Process />
+  <Subjects />
+  <FAQ />
+  <CTA />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Pisanie prac magisterskich z AI",
+    "description": seoDescription,
+    "url": "https://prace-magisterskie.pl",
+    "mainEntity": {
+      "@type": "Service",
+      "name": "Pisanie prac magisterskich",
+      "description": "Profesjonalne wsparcie AI przy pisaniu prac magisterskich i dyplomowych",
+      "provider": {
+        "@type": "Organization",
+        "name": "Smart-Edu.ai",
+        "url": "https://smart-edu.ai"
+      },
+      "serviceType": "Pisanie prac akademickich",
+      "areaServed": "PL"
+    }
+  })} />
+</Layout>

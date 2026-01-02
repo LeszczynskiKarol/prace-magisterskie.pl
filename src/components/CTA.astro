@@ -1,0 +1,66 @@
+---
+interface Props {
+  title?: string;
+  subtitle?: string;
+}
+
+const {
+  title = "Zacznij pisać swoją pracę magisterską już teraz",
+  subtitle = "Dołącz do tysięcy studentów, którzy już skorzystali z pomocy AI przy pisaniu prac dyplomowych. Pierwszy tekst wygenerujesz za darmo."
+} = Astro.props;
+---
+
+<section class="section-padding bg-gradient-to-br from-primary-600 via-primary-700 to-accent-700 relative overflow-hidden">
+  <!-- Background decorations -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="container-custom relative z-10">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-white mb-6 text-balance">
+        {title}
+      </h2>
+      <p class="text-xl text-primary-100 mb-10 text-balance">
+        {subtitle}
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a 
+          href="https://smart-edu.ai" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="btn bg-white text-primary-700 hover:bg-primary-50 text-lg px-8 py-4 shadow-xl"
+        >
+          Wypróbuj Smart-Edu.ai za darmo
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Trust badges -->
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-8 text-primary-200">
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+          <span>Bez karty kredytowej</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+          <span>Gotowe w minuty</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+          <span>100% unikalny tekst</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

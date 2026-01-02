@@ -1,0 +1,69 @@
+---
+const faqs = [
+  {
+    question: 'Czy praca wygenerowana przez AI jest unikalna?',
+    answer: 'Tak, każda praca jest generowana od podstaw specjalnie dla Ciebie. Tekst przechodzi przez systemy antyplagiatowe i jest w 100% oryginalny. Nie kopiujemy fragmentów z innych prac ani źródeł internetowych.'
+  },
+  {
+    question: 'Ile kosztuje napisanie pracy magisterskiej?',
+    answer: 'Korzystanie z Smart-Edu.ai jest znacznie tańsze niż tradycyjne usługi pisania prac. Oferujemy różne plany cenowe - od darmowego, który pozwala przetestować narzędzie, po plany premium z pełnym dostępem do wszystkich funkcji.'
+  },
+  {
+    question: 'Jak szybko mogę otrzymać gotową pracę?',
+    answer: 'Z AI generacja jest błyskawiczna. Kompletną pracę magisterską możesz wygenerować w ciągu kilku godzin - zamiast tygodni czekania na redaktora. Ty decydujesz o tempie pracy.'
+  },
+  {
+    question: 'Czy mogę edytować wygenerowany tekst?',
+    answer: 'Oczywiście! Masz pełną kontrolę nad treścią. Możesz edytować każdy fragment, generować alternatywne wersje, dodawać własne przemyślenia i dostosowywać tekst do swoich potrzeb.'
+  },
+  {
+    question: 'Jakie kierunki studiów obsługujecie?',
+    answer: 'Smart-Edu.ai obsługuje praktycznie każdy kierunek - od nauk społecznych (socjologia, psychologia, pedagogika) przez prawo i ekonomię, po kierunki techniczne i medyczne. AI dostosowuje styl i metodologię do specyfiki dziedziny.'
+  },
+  {
+    question: 'Czy to jest legalne?',
+    answer: 'Smart-Edu.ai to narzędzie wspomagające proces pisania - podobnie jak korzystanie z książek, artykułów czy konsultacji z promotorem. Wygenerowany tekst stanowi materiał pomocniczy, który powinieneś zrozumieć i umieć obronić.'
+  },
+  {
+    question: 'Co z bibliografią i przypisami?',
+    answer: 'AI automatycznie generuje profesjonalną bibliografię w wybranym stylu (APA, Harvard, Chicago lub innym). Przypisy są formatowane zgodnie z wymogami akademickimi i zawierają rzeczywiste źródła naukowe.'
+  },
+  {
+    question: 'Czy moje dane są bezpieczne?',
+    answer: 'Tak, stosujemy najwyższe standardy bezpieczeństwa. Wszystkie połączenia są szyfrowane, a Twoje prace nie są udostępniane osobom trzecim. Zachowujesz pełne prawa do wygenerowanych treści.'
+  },
+];
+---
+
+<section class="section-padding bg-gray-50 dark:bg-gray-900">
+  <div class="container-custom">
+    <!-- Header -->
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <h2 class="text-gray-900 dark:text-white mb-4">
+        Często zadawane <span class="gradient-text">pytania</span>
+      </h2>
+      <p class="text-lg text-gray-600 dark:text-gray-400">
+        Odpowiedzi na najczęściej zadawane pytania o pisanie prac magisterskich z pomocą AI.
+      </p>
+    </div>
+
+    <!-- FAQ Accordion -->
+    <div class="max-w-3xl mx-auto space-y-4">
+      {faqs.map((faq, index) => (
+        <details class="card group" id={`faq-${index}`}>
+          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+            <h3 class="font-display font-bold text-gray-900 dark:text-white pr-4 text-left">
+              {faq.question}
+            </h3>
+            <svg class="w-5 h-5 text-gray-500 dark:text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600 dark:text-gray-400">
+            {faq.answer}
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

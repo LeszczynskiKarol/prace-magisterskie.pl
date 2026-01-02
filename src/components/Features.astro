@@ -1,0 +1,65 @@
+---
+const features = [
+  {
+    icon: `<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>`,
+    title: 'Błyskawiczna generacja',
+    description: 'Napisz całą pracę magisterską w ciągu kilku godzin zamiast tygodni. AI generuje profesjonalny, merytoryczny tekst w czasie rzeczywistym.'
+  },
+  {
+    icon: `<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>`,
+    title: '100% unikalny tekst',
+    description: 'Każda praca generowana jest od podstaw. Zero plagiatów - sprawdzony przez systemy antyplagiatowe JSA, Plagiat.pl i inne.'
+  },
+  {
+    icon: `<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>`,
+    title: 'Profesjonalna bibliografia',
+    description: 'Automatyczne generowanie bibliografii w standardzie APA, Harvard lub Chicago. Cytaty i przypisy zgodne z wymogami uczelni.'
+  },
+  {
+    icon: `<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" /></svg>`,
+    title: 'Dowolny kierunek studiów',
+    description: 'Prace z socjologii, psychologii, pedagogiki, prawa, ekonomii, zarządzania i dziesiątek innych kierunków. AI zna specyfikę każdej dziedziny.'
+  },
+  {
+    icon: `<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>`,
+    title: 'Nieograniczone poprawki',
+    description: 'Generuj dowolną liczbę wersji. Modyfikuj tekst, zmieniaj styl, dodawaj rozdziały. Pełna kontrola nad końcowym efektem.'
+  },
+  {
+    icon: `<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>`,
+    title: 'Bezpieczeństwo danych',
+    description: 'Twoje dane i prace są w pełni bezpieczne. Szyfrowane połączenie, brak udostępniania treści. Pełna anonimowość.'
+  },
+];
+---
+
+<section class="section-padding bg-white dark:bg-gray-950">
+  <div class="container-custom">
+    <!-- Header -->
+    <div class="max-w-3xl mx-auto text-center mb-16">
+      <h2 class="text-gray-900 dark:text-white mb-4">
+        Dlaczego <span class="gradient-text">Smart-Edu.ai</span> to najlepszy wybór?
+      </h2>
+      <p class="text-lg text-gray-600 dark:text-gray-400">
+        Zapomnij o stresie związanym z pisaniem pracy magisterskiej. Nasz asystent AI pomoże Ci na każdym etapie - od wyboru tematu po ostateczną korektę.
+      </p>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      {features.map((feature, index) => (
+        <div class="card p-6 lg:p-8 group hover:border-primary-300 dark:hover:border-primary-700 transition-colors">
+          <div class="w-12 h-12 bg-gradient-to-br from-primary-100 to-accent-100 dark:from-primary-900/30 dark:to-accent-900/30 rounded-xl flex items-center justify-center text-primary-600 dark:text-primary-400 mb-4 group-hover:scale-110 transition-transform">
+            <Fragment set:html={feature.icon} />
+          </div>
+          <h3 class="text-xl font-display font-bold text-gray-900 dark:text-white mb-2">
+            {feature.title}
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400">
+            {feature.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
