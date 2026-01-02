@@ -2,8 +2,8 @@
 const navLinks = [
   { href: '/', label: 'Strona główna' },
   { href: '/kierunki', label: 'Kierunki' },
-  { href: '/jak-to-dziala', label: 'Jak to działa' },
-  { href: '/blog', label: 'Blog' },
+//  { href: '/jak-to-dziala', label: 'Jak to działa' },
+//  { href: '/blog', label: 'Blog' },
 ];
 ---
 
@@ -17,9 +17,14 @@ const navLinks = [
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
           </svg>
         </div>
-        <span class="text-lg md:text-xl font-display font-bold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-          Prace-Magisterskie<span class="text-primary-600 dark:text-primary-400">.pl</span>
-        </span>
+        <div class="flex flex-col">
+          <span class="text-lg md:text-xl font-display font-bold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors leading-tight">
+            Prace-Magisterskie<span class="text-primary-600 dark:text-primary-400">.pl</span>
+          </span>
+          <span class="text-[10px] md:text-xs text-gray-500 dark:text-gray-400 font-medium tracking-wide">
+            Pisanie prac mgr na zlecenie
+          </span>
+        </div>
       </a>
 
       <!-- Desktop Navigation -->

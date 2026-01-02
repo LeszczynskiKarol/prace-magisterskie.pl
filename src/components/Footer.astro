@@ -1,33 +1,46 @@
 ---
 const currentYear = new Date().getFullYear();
 
-const footerLinks = {
-  kierunki: [
-    { href: '/kierunki/socjologia', label: 'Socjologia' },
-    { href: '/kierunki/psychologia', label: 'Psychologia' },
-    { href: '/kierunki/pedagogika', label: 'Pedagogika' },
-    { href: '/kierunki/prawo', label: 'Prawo' },
-    { href: '/kierunki/ekonomia', label: 'Ekonomia' },
-    { href: '/kierunki/zarzadzanie', label: 'Zarządzanie' },
-  ],
-  informacje: [
-    { href: '/jak-to-dziala', label: 'Jak to działa' },
-    { href: '/blog', label: 'Blog' },
-    { href: '/cennik', label: 'Cennik' },
-    { href: '/faq', label: 'FAQ' },
-  ],
-  prawne: [
-    { href: '/regulamin', label: 'Regulamin' },
-    { href: '/polityka-prywatnosci', label: 'Polityka prywatności' },
-  ],
-};
+// Kierunki alfabetycznie - 3 kolumny po 6
+const kierunkiCol1 = [
+  { href: '/kierunki/administracja', label: 'Administracja' },
+  { href: '/kierunki/bezpieczenstwo', label: 'Bezpieczeństwo' },
+  { href: '/kierunki/ekonomia', label: 'Ekonomia' },
+  { href: '/kierunki/filologia-angielska', label: 'Filologia angielska' },
+  { href: '/kierunki/filologia-polska', label: 'Filologia polska' },
+  { href: '/kierunki/finanse', label: 'Finanse' },
+];
+
+const kierunkiCol2 = [
+  { href: '/kierunki/historia', label: 'Historia' },
+  { href: '/kierunki/informatyka', label: 'Informatyka' },
+  { href: '/kierunki/kulturoznawstwo', label: 'Kulturoznawstwo' },
+  { href: '/kierunki/logistyka', label: 'Logistyka' },
+  { href: '/kierunki/marketing', label: 'Marketing' },
+  { href: '/kierunki/pedagogika', label: 'Pedagogika' },
+];
+
+const kierunkiCol3 = [
+  { href: '/kierunki/pielegniarstwo', label: 'Pielęgniarstwo' },
+  { href: '/kierunki/politologia', label: 'Politologia' },
+  { href: '/kierunki/prawo', label: 'Prawo' },
+  { href: '/kierunki/psychologia', label: 'Psychologia' },
+  { href: '/kierunki/socjologia', label: 'Socjologia' },
+  { href: '/kierunki/zarzadzanie', label: 'Zarządzanie' },
+];
+
+const prawne = [
+  //{ href: '/regulamin', label: 'Regulamin' },
+  { href: '/polityka-prywatnosci', label: 'Polityka prywatności' },
+];
 ---
 
 <footer class="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
   <div class="container-custom section-padding">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
+    <!-- Top section: Brand + Kierunki -->
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
       <!-- Brand -->
-      <div class="col-span-2 md:col-span-1">
+      <div class="lg:col-span-2">
         <a href="/" class="flex items-center gap-2 mb-4">
           <div class="w-10 h-10 bg-gradient-to-br from-primary-600 to-accent-600 rounded-xl flex items-center justify-center">
             <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -38,7 +51,7 @@ const footerLinks = {
             Prace-Magisterskie<span class="text-primary-600">.pl</span>
           </span>
         </a>
-        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 max-w-sm">
           Profesjonalne wsparcie AI przy pisaniu prac magisterskich. Skorzystaj z inteligentnego asystenta Smart-Edu.ai.
         </p>
         <a 
@@ -51,55 +64,59 @@ const footerLinks = {
         </a>
       </div>
 
-      <!-- Kierunki -->
-      <div>
-        <h4 class="font-display font-bold text-gray-900 dark:text-white mb-4">Kierunki</h4>
-        <ul class="space-y-2">
-          {footerLinks.kierunki.map((link) => (
-            <li>
-              <a 
-                href={link.href} 
-                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <!-- Informacje -->
-      <div>
-        <h4 class="font-display font-bold text-gray-900 dark:text-white mb-4">Informacje</h4>
-        <ul class="space-y-2">
-          {footerLinks.informacje.map((link) => (
-            <li>
-              <a 
-                href={link.href} 
-                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <!-- Prawne -->
-      <div>
-        <h4 class="font-display font-bold text-gray-900 dark:text-white mb-4">Prawne</h4>
-        <ul class="space-y-2">
-          {footerLinks.prawne.map((link) => (
-            <li>
-              <a 
-                href={link.href} 
-                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+      <!-- Kierunki - 3 kolumny -->
+      <div class="lg:col-span-3">
+        <h4 class="font-display font-bold text-gray-900 dark:text-white mb-4">Kierunki studiów</h4>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-2">
+          <!-- Kolumna 1 -->
+          <ul class="space-y-2">
+            {kierunkiCol1.map((link) => (
+              <li>
+                <a 
+                  href={link.href} 
+                  class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <!-- Kolumna 2 -->
+          <ul class="space-y-2">
+            {kierunkiCol2.map((link) => (
+              <li>
+                <a 
+                  href={link.href} 
+                  class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <!-- Kolumna 3 -->
+          <ul class="space-y-2">
+            {kierunkiCol3.map((link) => (
+              <li>
+                <a 
+                  href={link.href} 
+                  class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <a 
+          href="/kierunki" 
+          class="inline-flex items-center gap-1 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 text-sm font-medium mt-4 transition-colors"
+        >
+          Zobacz wszystkie kierunki
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
       </div>
     </div>
 
@@ -108,9 +125,22 @@ const footerLinks = {
       <p class="text-gray-500 dark:text-gray-500 text-sm">
         © {currentYear} Prace-Magisterskie.pl. Wszelkie prawa zastrzeżone.
       </p>
-      <p class="text-gray-500 dark:text-gray-500 text-sm">
-        Powered by <a href="https://smart-edu.ai" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:underline">Smart-Edu.ai</a>
+      <div class="flex items-center gap-6">
+        <div class="flex items-center gap-4">
+          {prawne.map((link) => (
+            <a 
+              href={link.href} 
+              class="text-gray-500 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+        <span class="text-gray-300 dark:text-gray-700">|</span>
+        <p class="text-gray-500 dark:text-gray-500 text-sm">
+        Made by <a href="https://www.torweb.pl" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:underline">TorWeb.pl</a>
       </p>
+      </div>
     </div>
   </div>
 </footer>

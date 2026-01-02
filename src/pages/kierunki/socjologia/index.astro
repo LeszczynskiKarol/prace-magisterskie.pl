@@ -1,0 +1,783 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import CTA from '../../../components/CTA.astro';
+
+const seoTitle = "Pisanie prac magisterskich z socjologii na zamówienie | Prace-Magisterskie.pl";
+const seoDescription = "Profesjonalne pisanie prac magisterskich z socjologii. Badania społeczne, analiza zjawisk społecznych, metodologia socjologiczna. 100% unikalny tekst, bez plagiatów. Skorzystaj z AI.";
+const seoKeywords = [
+  "pisanie prac magisterskich z socjologii",
+  "praca magisterska z socjologii",
+  "praca magisterska socjologia",
+  "pisanie prac socjologia",
+  "praca mgr socjologia",
+  "pisanie prac z socjologii na zamówienie",
+  "praca magisterska z socjologii na zlecenie",
+  "socjologia praca magisterska tematy",
+  "metodologia badań socjologicznych"
+];
+---
+
+<Layout title={seoTitle} description={seoDescription} keywords={seoKeywords}>
+  <!-- Hero Section -->
+  <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 gradient-bg overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute top-20 right-10 w-72 h-72 bg-primary-500/20 rounded-full blur-3xl animate-pulse-glow"></div>
+      <div class="absolute bottom-20 left-10 w-72 h-72 bg-accent-500/20 rounded-full blur-3xl animate-pulse-glow" style="animation-delay: 2s;"></div>
+    </div>
+
+    <div class="container-custom relative z-10">
+      <div class="max-w-4xl">
+        <!-- Breadcrumb -->
+        <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+          <a href="/" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Strona główna</a>
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+          <a href="/kierunki" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Kierunki</a>
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+          <span class="text-gray-900 dark:text-white">Socjologia</span>
+        </nav>
+
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-100 dark:bg-primary-900/30 border border-primary-200 dark:border-primary-800 text-primary-700 dark:text-primary-300 text-sm font-medium mb-6">
+          <span>👥</span>
+          <span>Pisanie prac z socjologii</span>
+        </div>
+
+        <!-- Title -->
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 dark:text-white mb-6">
+          Pisanie prac magisterskich z <span class="gradient-text">socjologii</span> na zamówienie
+        </h1>
+
+        <!-- Description -->
+        <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+          Profesjonalna pomoc w pisaniu prac magisterskich z socjologii. Badania społeczne, analiza zjawisk społecznych, metodologia socjologiczna. Skorzystaj z asystenta AI i napisz unikalną pracę magisterską.
+        </p>
+
+        <!-- CTA -->
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a 
+            href="https://smart-edu.ai" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="btn-primary text-lg px-8 py-4"
+          >
+            Zacznij pisać z AI
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+          <a href="#tematy" class="btn-secondary text-lg px-8 py-4">
+            Zobacz przykładowe tematy
+          </a>
+        </div>
+
+        <!-- Trust badges -->
+        <div class="flex flex-wrap items-center gap-6 mt-10 pt-10 border-t border-gray-200 dark:border-gray-800">
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="text-sm text-gray-600 dark:text-gray-400">100% unikalny tekst</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="text-sm text-gray-600 dark:text-gray-400">Profesjonalna bibliografia</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="text-sm text-gray-600 dark:text-gray-400">Gotowe w godziny</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro Section -->
+  <section class="section-padding bg-white dark:bg-gray-950">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-8">
+          Czym jest praca magisterska z socjologii?
+        </h2>
+        
+        <div class="prose prose-lg dark:prose-invert max-w-none">
+          <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+            <strong class="text-gray-900 dark:text-white">Socjologia</strong> to nauka badająca społeczeństwo, struktury społeczne, relacje międzyludzkie oraz procesy zachodzące w grupach i zbiorowościach. Prace magisterskie z socjologii wymagają znajomości teorii socjologicznych, umiejętności prowadzenia badań empirycznych oraz analizy danych jakościowych i ilościowych.
+          </p>
+          
+          <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+            Pisanie pracy magisterskiej z socjologii to wyzwanie, które wymaga połączenia solidnych podstaw teoretycznych z właściwie przeprowadzonymi badaniami empirycznymi. Niezależnie od tego, czy piszesz o <strong class="text-gray-900 dark:text-white">nierównościach społecznych</strong>, <strong class="text-gray-900 dark:text-white">socjologii rodziny</strong> czy <strong class="text-gray-900 dark:text-white">procesach migracyjnych</strong> - Smart-Edu.ai pomoże Ci stworzyć pracę na najwyższym poziomie merytorycznym.
+          </p>
+
+          <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+            Nasz asystent AI generuje unikalne treści uwzględniające najnowsze teorie socjologiczne - od klasycznych koncepcji <strong class="text-gray-900 dark:text-white">Émile'a Durkheima</strong> i <strong class="text-gray-900 dark:text-white">Maxa Webera</strong>, przez funkcjonalizm <strong class="text-gray-900 dark:text-white">Talcotta Parsonsa</strong>, aż po współczesne teorie <strong class="text-gray-900 dark:text-white">Pierre'a Bourdieu</strong> czy <strong class="text-gray-900 dark:text-white">Anthony'ego Giddensa</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="section-padding bg-gray-50 dark:bg-gray-900">
+    <div class="container-custom">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-4 text-center">
+          Dlaczego warto skorzystać z <span class="gradient-text">Smart-Edu.ai</span>?
+        </h2>
+        <p class="text-gray-600 dark:text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+          Pisanie prac magisterskich z socjologii z AI to oszczędność czasu i gwarancja jakości
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card p-6">
+            <div class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-green-600 dark:text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-display font-bold text-gray-900 dark:text-white mb-2">100% unikalny tekst</h3>
+            <p class="text-gray-600 dark:text-gray-400">Każda praca magisterska z socjologii generowana jest od podstaw. Gwarantujemy oryginalność treści i brak plagiatów.</p>
+          </div>
+
+          <div class="card p-6">
+            <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <h3 class="font-display font-bold text-gray-900 dark:text-white mb-2">Znajomość teorii socjologicznych</h3>
+            <p class="text-gray-600 dark:text-gray-400">AI zna klasyczne i współczesne teorie socjologiczne - od Durkheima po Bourdieu. Właściwy aparat pojęciowy w każdej pracy.</p>
+          </div>
+
+          <div class="card p-6">
+            <div class="w-12 h-12 bg-accent-100 dark:bg-accent-900/30 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-accent-600 dark:text-accent-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+              </svg>
+            </div>
+            <h3 class="font-display font-bold text-gray-900 dark:text-white mb-2">Metodologia badań społecznych</h3>
+            <p class="text-gray-600 dark:text-gray-400">Pomoc w doborze metod badawczych - wywiady IDI, ankiety CAWI/PAPI, analiza treści, obserwacja uczestnicząca.</p>
+          </div>
+
+          <div class="card p-6">
+            <div class="w-12 h-12 bg-yellow-100 dark:bg-yellow-900/30 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-yellow-600 dark:text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="font-display font-bold text-gray-900 dark:text-white mb-2">Szybka realizacja</h3>
+            <p class="text-gray-600 dark:text-gray-400">Gotowa praca magisterska z socjologii w godziny zamiast tygodni. Oszczędź czas na przygotowania do obrony.</p>
+          </div>
+
+          <div class="card p-6">
+            <div class="w-12 h-12 bg-red-100 dark:bg-red-900/30 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600 dark:text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
+            </div>
+            <h3 class="font-display font-bold text-gray-900 dark:text-white mb-2">Profesjonalna bibliografia</h3>
+            <p class="text-gray-600 dark:text-gray-400">Automatyczne generowanie bibliografii z klasycznych i współczesnych źródeł socjologicznych polskich i zagranicznych.</p>
+          </div>
+
+          <div class="card p-6">
+            <div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/30 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+              </svg>
+            </div>
+            <h3 class="font-display font-bold text-gray-900 dark:text-white mb-2">Analiza danych</h3>
+            <p class="text-gray-600 dark:text-gray-400">Pomoc w analizie danych ilościowych i jakościowych. Tabele, wykresy, interpretacja wyników badań socjologicznych.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Topics Section -->
+  <section id="tematy" class="section-padding bg-white dark:bg-gray-950">
+    <div class="container-custom">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-4 text-center">
+          Popularne tematy prac magisterskich z <span class="gradient-text">socjologii</span>
+        </h2>
+        <p class="text-gray-600 dark:text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+          Przykładowe obszary tematyczne, w których nasz asystent AI pomoże Ci napisać profesjonalną pracę magisterską
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-12">
+          <div class="card p-6">
+            <h3 class="font-display font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+              <span class="w-10 h-10 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center text-primary-600 dark:text-primary-400 font-bold">1</span>
+              Socjologia rodziny i małżeństwa
+            </h3>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Przemiany modelu rodziny w Polsce XXI wieku
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Wpływ mediów społecznościowych na relacje rodzinne
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Socjalizacja do ról płciowych w rodzinie
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Rodziny patchworkowe - nowe formy życia rodzinnego
+              </li>
+            </ul>
+          </div>
+
+          <div class="card p-6">
+            <h3 class="font-display font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+              <span class="w-10 h-10 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center text-primary-600 dark:text-primary-400 font-bold">2</span>
+              Nierówności społeczne
+            </h3>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Nierówności w dostępie do edukacji wyższej
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Stratyfikacja społeczna i mobilność międzypokoleniowa
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Ubóstwo i wykluczenie społeczne w Polsce
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Kapitał kulturowy a szanse życiowe jednostki
+              </li>
+            </ul>
+          </div>
+
+          <div class="card p-6">
+            <h3 class="font-display font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+              <span class="w-10 h-10 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center text-primary-600 dark:text-primary-400 font-bold">3</span>
+              Socjologia mediów i komunikacji
+            </h3>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Wpływ social media na tożsamość młodzieży
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Fake news i dezinformacja w społeczeństwie
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Cyfrowe wykluczenie osób starszych
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Influencerzy jako nowi liderzy opinii
+              </li>
+            </ul>
+          </div>
+
+          <div class="card p-6">
+            <h3 class="font-display font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+              <span class="w-10 h-10 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center text-primary-600 dark:text-primary-400 font-bold">4</span>
+              Migracje i mobilność społeczna
+            </h3>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Migracje zarobkowe Polaków po wejściu do UE
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Integracja imigrantów w społeczeństwie polskim
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Transnarodowość i tożsamość migrantów
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Uchodźcy w Polsce - postawy społeczne
+              </li>
+            </ul>
+          </div>
+
+          <div class="card p-6">
+            <h3 class="font-display font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+              <span class="w-10 h-10 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center text-primary-600 dark:text-primary-400 font-bold">5</span>
+              Socjologia pracy i organizacji
+            </h3>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Praca zdalna a work-life balance
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Prekaryzacja zatrudnienia młodych Polaków
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Kultura organizacyjna w firmach IT
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Dyskryminacja na rynku pracy
+              </li>
+            </ul>
+          </div>
+
+          <div class="card p-6">
+            <h3 class="font-display font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+              <span class="w-10 h-10 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center text-primary-600 dark:text-primary-400 font-bold">6</span>
+              Socjologia miasta i wsi
+            </h3>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Gentryfikacja dzielnic miejskich
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Kapitał społeczny mieszkańców wsi
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Suburbanizacja i rozlewanie się miast
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Wspólnoty lokalne w dobie globalizacji
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Example titles -->
+        <div class="bg-gray-100 dark:bg-gray-800 rounded-2xl p-8">
+          <h3 class="font-display font-bold text-gray-900 dark:text-white mb-6 text-center">
+            Przykładowe tytuły prac magisterskich z socjologii
+          </h3>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="flex items-start gap-3 bg-white dark:bg-gray-900 rounded-xl p-4">
+              <span class="text-primary-600 dark:text-primary-400 font-bold">1.</span>
+              <span class="text-gray-700 dark:text-gray-300">Wpływ mediów społecznościowych na relacje rodzinne pokolenia Z - badania jakościowe</span>
+            </div>
+            <div class="flex items-start gap-3 bg-white dark:bg-gray-900 rounded-xl p-4">
+              <span class="text-primary-600 dark:text-primary-400 font-bold">2.</span>
+              <span class="text-gray-700 dark:text-gray-300">Nierówności społeczne w dostępie do edukacji wyższej w Polsce po 1989 roku</span>
+            </div>
+            <div class="flex items-start gap-3 bg-white dark:bg-gray-900 rounded-xl p-4">
+              <span class="text-primary-600 dark:text-primary-400 font-bold">3.</span>
+              <span class="text-gray-700 dark:text-gray-300">Migracje zarobkowe Polaków po 2004 roku - perspektywa socjologiczna</span>
+            </div>
+            <div class="flex items-start gap-3 bg-white dark:bg-gray-900 rounded-xl p-4">
+              <span class="text-primary-600 dark:text-primary-400 font-bold">4.</span>
+              <span class="text-gray-700 dark:text-gray-300">Wykluczenie społeczne osób bezdomnych w dużych miastach polskich</span>
+            </div>
+            <div class="flex items-start gap-3 bg-white dark:bg-gray-900 rounded-xl p-4">
+              <span class="text-primary-600 dark:text-primary-400 font-bold">5.</span>
+              <span class="text-gray-700 dark:text-gray-300">Przemiany wzorów konsumpcji w społeczeństwie polskim XXI wieku</span>
+            </div>
+            <div class="flex items-start gap-3 bg-white dark:bg-gray-900 rounded-xl p-4">
+              <span class="text-primary-600 dark:text-primary-400 font-bold">6.</span>
+              <span class="text-gray-700 dark:text-gray-300">Ruchy społeczne w erze cyfrowej - analiza aktywizmu online w Polsce</span>
+            </div>
+            <div class="flex items-start gap-3 bg-white dark:bg-gray-900 rounded-xl p-4">
+              <span class="text-primary-600 dark:text-primary-400 font-bold">7.</span>
+              <span class="text-gray-700 dark:text-gray-300">Socjalizacja do ról płciowych w polskich rodzinach - studium porównawcze</span>
+            </div>
+            <div class="flex items-start gap-3 bg-white dark:bg-gray-900 rounded-xl p-4">
+              <span class="text-primary-600 dark:text-primary-400 font-bold">8.</span>
+              <span class="text-gray-700 dark:text-gray-300">Kapitał społeczny mieszkańców polskich wsi w procesie transformacji</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Methodology Section -->
+  <section class="section-padding bg-gray-50 dark:bg-gray-900">
+    <div class="container-custom">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-4 text-center">
+          Metodologia badań socjologicznych
+        </h2>
+        <p class="text-gray-600 dark:text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+          AI zna i stosuje właściwe metodologie badawcze charakterystyczne dla socjologii
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="font-display font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+              <span class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center text-white">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+              </span>
+              Metody ilościowe
+            </h3>
+            <div class="space-y-4">
+              <div class="bg-white dark:bg-gray-800 rounded-xl p-5">
+                <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Badania ankietowe (CAWI, PAPI, CATI)</h4>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">Kwestionariusze online, papierowe lub telefoniczne. Idealne do badań na dużych próbach i analiz statystycznych.</p>
+              </div>
+              <div class="bg-white dark:bg-gray-800 rounded-xl p-5">
+                <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Analiza danych zastanych</h4>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">Wykorzystanie danych GUS, Eurostatu, CBOS. Analiza trendów społecznych i porównania międzynarodowe.</p>
+              </div>
+              <div class="bg-white dark:bg-gray-800 rounded-xl p-5">
+                <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Analiza statystyczna</h4>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">Testy chi-kwadrat, korelacje, regresja, analiza wariancji. Profesjonalna interpretacja wyników.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-display font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+              <span class="w-10 h-10 bg-accent-600 rounded-lg flex items-center justify-center text-white">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+              </span>
+              Metody jakościowe
+            </h3>
+            <div class="space-y-4">
+              <div class="bg-white dark:bg-gray-800 rounded-xl p-5">
+                <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Wywiady pogłębione (IDI)</h4>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">Indywidualne wywiady częściowo ustrukturyzowane. Dogłębna eksploracja doświadczeń i opinii respondentów.</p>
+              </div>
+              <div class="bg-white dark:bg-gray-800 rounded-xl p-5">
+                <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Wywiady fokusowe (FGI)</h4>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">Zogniskowane wywiady grupowe. Badanie interakcji i dynamiki grupowej w dyskusji na określony temat.</p>
+              </div>
+              <div class="bg-white dark:bg-gray-800 rounded-xl p-5">
+                <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Obserwacja uczestnicząca</h4>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">Etnograficzna metoda badawcza. Badacz uczestniczy w życiu badanej grupy, prowadząc dziennik obserwacji.</p>
+              </div>
+              <div class="bg-white dark:bg-gray-800 rounded-xl p-5">
+                <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Analiza treści</h4>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">Systematyczna analiza tekstów, mediów, dokumentów. Identyfikacja wzorców i znaczeń w materiałach źródłowych.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Structure Section -->
+  <section class="section-padding bg-white dark:bg-gray-950">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-4 text-center">
+          Struktura pracy magisterskiej z socjologii
+        </h2>
+        <p class="text-gray-600 dark:text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+          Typowa struktura pracy magisterskiej z socjologii składa się z części teoretycznej i empirycznej
+        </p>
+
+        <div class="space-y-4">
+          <div class="flex items-start gap-4 bg-gray-50 dark:bg-gray-900 rounded-xl p-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-primary-600 to-accent-600 rounded-xl flex items-center justify-center text-white font-display font-bold flex-shrink-0">1</div>
+            <div>
+              <h3 class="font-display font-bold text-gray-900 dark:text-white mb-2">Wstęp</h3>
+              <p class="text-gray-600 dark:text-gray-400">Uzasadnienie wyboru tematu, cele pracy, pytania badawcze lub hipotezy, zakres pracy, struktura rozdziałów.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 bg-gray-50 dark:bg-gray-900 rounded-xl p-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-primary-600 to-accent-600 rounded-xl flex items-center justify-center text-white font-display font-bold flex-shrink-0">2</div>
+            <div>
+              <h3 class="font-display font-bold text-gray-900 dark:text-white mb-2">Rozdział 1 - Teoretyczne podstawy problematyki</h3>
+              <p class="text-gray-600 dark:text-gray-400">Przegląd literatury przedmiotu, definicje kluczowych pojęć, omówienie głównych teorii socjologicznych związanych z tematem, stan badań.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 bg-gray-50 dark:bg-gray-900 rounded-xl p-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-primary-600 to-accent-600 rounded-xl flex items-center justify-center text-white font-display font-bold flex-shrink-0">3</div>
+            <div>
+              <h3 class="font-display font-bold text-gray-900 dark:text-white mb-2">Rozdział 2 - Metodologia badań własnych</h3>
+              <p class="text-gray-600 dark:text-gray-400">Cel i przedmiot badań, problemy badawcze i hipotezy, metody i techniki badawcze, charakterystyka próby badawczej, opis narzędzi badawczych.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 bg-gray-50 dark:bg-gray-900 rounded-xl p-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-primary-600 to-accent-600 rounded-xl flex items-center justify-center text-white font-display font-bold flex-shrink-0">4</div>
+            <div>
+              <h3 class="font-display font-bold text-gray-900 dark:text-white mb-2">Rozdział 3 - Analiza wyników badań empirycznych</h3>
+              <p class="text-gray-600 dark:text-gray-400">Prezentacja zebranych danych, analiza ilościowa lub jakościowa, tabele i wykresy, interpretacja wyników w odniesieniu do teorii.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 bg-gray-50 dark:bg-gray-900 rounded-xl p-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-primary-600 to-accent-600 rounded-xl flex items-center justify-center text-white font-display font-bold flex-shrink-0">5</div>
+            <div>
+              <h3 class="font-display font-bold text-gray-900 dark:text-white mb-2">Zakończenie</h3>
+              <p class="text-gray-600 dark:text-gray-400">Podsumowanie ustaleń, weryfikacja hipotez, wnioski z badań, rekomendacje praktyczne, propozycje dalszych badań.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 bg-gray-50 dark:bg-gray-900 rounded-xl p-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-primary-600 to-accent-600 rounded-xl flex items-center justify-center text-white font-display font-bold flex-shrink-0">6</div>
+            <div>
+              <h3 class="font-display font-bold text-gray-900 dark:text-white mb-2">Bibliografia i aneksy</h3>
+              <p class="text-gray-600 dark:text-gray-400">Wykaz literatury w formacie APA lub Chicago, aneksy z kwestionariuszami, tabelami, transkrypcjami wywiadów.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section-padding bg-gray-50 dark:bg-gray-900">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-4 text-center">
+          Najczęściej zadawane pytania
+        </h2>
+        <p class="text-gray-600 dark:text-gray-400 text-center mb-12">
+          Odpowiedzi na pytania dotyczące pisania prac magisterskich z socjologii
+        </p>
+
+        <div class="space-y-4">
+          <details class="group card p-6">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <h3 class="font-display font-bold text-gray-900 dark:text-white pr-4">
+                Jakie metody badawcze są najczęściej stosowane w pracach z socjologii?
+              </h3>
+              <svg class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <p class="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+              W pracach magisterskich z socjologii najczęściej stosuje się <strong class="text-gray-900 dark:text-white">badania ankietowe</strong> (CAWI - ankieta internetowa, PAPI - ankieta papierowa), <strong class="text-gray-900 dark:text-white">wywiady pogłębione (IDI)</strong>, <strong class="text-gray-900 dark:text-white">wywiady fokusowe (FGI)</strong>, <strong class="text-gray-900 dark:text-white">obserwację uczestniczącą</strong> oraz <strong class="text-gray-900 dark:text-white">analizę treści</strong>. Wybór metody zależy od tematu i celów badawczych. AI pomoże dobrać odpowiednią metodologię do Twojego tematu pracy magisterskiej.
+            </p>
+          </details>
+
+          <details class="group card p-6">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <h3 class="font-display font-bold text-gray-900 dark:text-white pr-4">
+                Ile stron powinna mieć praca magisterska z socjologii?
+              </h3>
+              <svg class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <p class="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+              Standardowa praca magisterska z socjologii liczy od <strong class="text-gray-900 dark:text-white">60 do 100 stron</strong>. Część teoretyczna (przegląd literatury, teorie) zajmuje zazwyczaj 30-40% pracy, natomiast część empiryczna z analizą badań własnych stanowi 50-60% całości. Smart-Edu.ai wygeneruje pracę o odpowiedniej objętości, zachowując właściwe proporcje między teorią a empirią.
+            </p>
+          </details>
+
+          <details class="group card p-6">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <h3 class="font-display font-bold text-gray-900 dark:text-white pr-4">
+                Czy praca magisterska z socjologii musi zawierać badania własne?
+              </h3>
+              <svg class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <p class="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+              Tak, większość uczelni wymaga przeprowadzenia <strong class="text-gray-900 dark:text-white">badań empirycznych</strong> w pracy magisterskiej z socjologii. Mogą to być badania pierwotne (własne ankiety, wywiady, obserwacje) lub analiza danych zastanych (secondary data analysis). Smart-Edu.ai pomoże zaprojektować metodologię badań, przygotować narzędzia badawcze i zaplanować analizę wyników.
+            </p>
+          </details>
+
+          <details class="group card p-6">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <h3 class="font-display font-bold text-gray-900 dark:text-white pr-4">
+                Jakie teorie socjologiczne powinny być uwzględnione w pracy?
+              </h3>
+              <svg class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <p class="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+              Wybór teorii zależy od tematu pracy. AI zna wszystkie główne paradygmaty socjologiczne: <strong class="text-gray-900 dark:text-white">funkcjonalizm</strong> (Durkheim, Parsons, Merton), <strong class="text-gray-900 dark:text-white">konfliktowy</strong> (Marx, Weber), <strong class="text-gray-900 dark:text-white">interakcjonizm symboliczny</strong> (Mead, Goffman), <strong class="text-gray-900 dark:text-white">strukturalizm</strong> (Bourdieu), <strong class="text-gray-900 dark:text-white">teoria strukturacji</strong> (Giddens) i wiele innych. Dobierzemy odpowiednie ramy teoretyczne do Twojego tematu.
+            </p>
+          </details>
+
+          <details class="group card p-6">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <h3 class="font-display font-bold text-gray-900 dark:text-white pr-4">
+                Ile osób powinno być w próbie badawczej?
+              </h3>
+              <svg class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <p class="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+              Wielkość próby zależy od metody badawczej. W <strong class="text-gray-900 dark:text-white">badaniach ilościowych</strong> (ankiety) minimalna próba to zazwyczaj 100-200 osób dla podstawowych analiz statystycznych. W <strong class="text-gray-900 dark:text-white">badaniach jakościowych</strong> (wywiady IDI) wystarcza 15-30 respondentów - aż do osiągnięcia nasycenia teoretycznego. AI pomoże ustalić optymalną wielkość próby dla Twojego badania.
+            </p>
+          </details>
+
+          <details class="group card p-6">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <h3 class="font-display font-bold text-gray-900 dark:text-white pr-4">
+                Jak powinna wyglądać bibliografia w pracy z socjologii?
+              </h3>
+              <svg class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <p class="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+              Bibliografia pracy magisterskiej z socjologii powinna zawierać <strong class="text-gray-900 dark:text-white">minimum 40-60 pozycji</strong>. Obejmuje klasyczne prace socjologiczne (Durkheim, Weber, Bourdieu), współczesne publikacje z czasopism naukowych (np. American Sociological Review, Studia Socjologiczne), raporty z badań (CBOS, GUS) oraz źródła internetowe. Smart-Edu.ai generuje bibliografię w formacie APA lub Chicago.
+            </p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section-padding bg-white dark:bg-gray-950">
+    <div class="container-custom">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-4 text-center">
+          Jak napisać pracę magisterską z socjologii z AI?
+        </h2>
+        <p class="text-gray-600 dark:text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+          Cztery proste kroki do profesjonalnej pracy magisterskiej
+        </p>
+
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-600 to-accent-600 rounded-2xl flex items-center justify-center text-white font-display font-bold text-2xl mx-auto mb-6">1</div>
+            <h3 class="font-display font-bold text-gray-900 dark:text-white mb-3">Podaj temat</h3>
+            <p class="text-gray-600 dark:text-gray-400">Wpisz temat pracy magisterskiej z socjologii i wytyczne promotora dotyczące struktury i metodologii.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-600 to-accent-600 rounded-2xl flex items-center justify-center text-white font-display font-bold text-2xl mx-auto mb-6">2</div>
+            <h3 class="font-display font-bold text-gray-900 dark:text-white mb-3">AI tworzy strukturę</h3>
+            <p class="text-gray-600 dark:text-gray-400">System generuje konspekt pracy z podziałem na rozdziały teoretyczne i empiryczne.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-600 to-accent-600 rounded-2xl flex items-center justify-center text-white font-display font-bold text-2xl mx-auto mb-6">3</div>
+            <h3 class="font-display font-bold text-gray-900 dark:text-white mb-3">Generuj treść</h3>
+            <p class="text-gray-600 dark:text-gray-400">AI pisze profesjonalnym językiem naukowym, stosując terminologię socjologiczną i właściwy aparat pojęciowy.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-600 to-accent-600 rounded-2xl flex items-center justify-center text-white font-display font-bold text-2xl mx-auto mb-6">4</div>
+            <h3 class="font-display font-bold text-gray-900 dark:text-white mb-3">Pobierz pracę</h3>
+            <p class="text-gray-600 dark:text-gray-400">Eksportuj gotową pracę do DOCX z profesjonalną bibliografią i formatowaniem.</p>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a 
+            href="https://smart-edu.ai" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="btn-primary text-lg px-10 py-5"
+          >
+            Generuj pracę ze Smart-Edu.ai
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related subjects -->
+  <section class="section-padding bg-gray-50 dark:bg-gray-900">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-display font-bold text-gray-900 dark:text-white mb-8 text-center">
+          Powiązane kierunki studiów
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <a href="/kierunki/psychologia" class="card p-5 text-center hover:border-primary-300 dark:hover:border-primary-700 transition-colors group">
+            <span class="text-3xl block mb-2 group-hover:scale-110 transition-transform">🧠</span>
+            <span class="font-medium text-gray-700 dark:text-gray-300 group-hover:text-primary-600 dark:group-hover:text-primary-400">Psychologia</span>
+          </a>
+          <a href="/kierunki/pedagogika" class="card p-5 text-center hover:border-primary-300 dark:hover:border-primary-700 transition-colors group">
+            <span class="text-3xl block mb-2 group-hover:scale-110 transition-transform">📚</span>
+            <span class="font-medium text-gray-700 dark:text-gray-300 group-hover:text-primary-600 dark:group-hover:text-primary-400">Pedagogika</span>
+          </a>
+          <a href="/kierunki/politologia" class="card p-5 text-center hover:border-primary-300 dark:hover:border-primary-700 transition-colors group">
+            <span class="text-3xl block mb-2 group-hover:scale-110 transition-transform">🗳️</span>
+            <span class="font-medium text-gray-700 dark:text-gray-300 group-hover:text-primary-600 dark:group-hover:text-primary-400">Politologia</span>
+          </a>
+          <a href="/kierunki/kulturoznawstwo" class="card p-5 text-center hover:border-primary-300 dark:hover:border-primary-700 transition-colors group">
+            <span class="text-3xl block mb-2 group-hover:scale-110 transition-transform">🎭</span>
+            <span class="font-medium text-gray-700 dark:text-gray-300 group-hover:text-primary-600 dark:group-hover:text-primary-400">Kulturoznawstwo</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTA 
+    title="Napisz swoją pracę magisterską z socjologii już teraz"
+    subtitle="Dołącz do tysięcy studentów, którzy skorzystali z pomocy AI. Wygeneruj swój pierwszy tekst!"
+  />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Pisanie prac magisterskich z socjologii",
+    "description": seoDescription,
+    "provider": {
+      "@type": "Organization",
+      "name": "Smart-Edu.ai",
+      "url": "https://smart-edu.ai"
+    },
+    "serviceType": "Pisanie prac akademickich - Socjologia",
+    "areaServed": "PL",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Tematy prac z socjologii",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Socjologia rodziny i małżeństwa"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Nierówności społeczne"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Socjologia mediów i komunikacji"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Migracje i mobilność społeczna"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Socjologia pracy i organizacji"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Socjologia miasta i wsi"}}
+      ]
+    }
+  })} />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Jakie metody badawcze są najczęściej stosowane w pracach z socjologii?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "W pracach magisterskich z socjologii najczęściej stosuje się badania ankietowe (CAWI, PAPI), wywiady pogłębione (IDI), wywiady fokusowe (FGI), obserwację uczestniczącą oraz analizę treści."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ile stron powinna mieć praca magisterska z socjologii?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Standardowa praca magisterska z socjologii liczy od 60 do 100 stron. Część teoretyczna zajmuje 30-40% pracy, a część empiryczna z analizą badań 50-60%."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy praca magisterska z socjologii musi zawierać badania własne?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tak, większość uczelni wymaga przeprowadzenia badań empirycznych. Mogą to być badania pierwotne (własne ankiety, wywiady) lub analiza danych zastanych."
+        }
+      }
+    ]
+  })} />
+</Layout>
