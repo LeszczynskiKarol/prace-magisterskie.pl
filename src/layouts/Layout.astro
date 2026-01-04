@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import CookieBanner from '../components/CookieBanner.astro';
 
 interface Props {
   title: string;
@@ -40,6 +41,10 @@ const canonicalURL = canonical || Astro.url.href;
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     
+    <!-- Preconnect to Google domains for faster loading after consent -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    
     <title>{title}</title>
     
     <!-- Dark mode script (prevent flash) -->
@@ -62,10 +67,23 @@ const canonicalURL = canonical || Astro.url.href;
     </script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TNMGPS5M"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+        title="Google Tag Manager"></iframe>
+    </noscript>
+
     <Header />
     <main>
       <slot />
     </main>
     <Footer />
+    
+    <!-- Cookie Consent Banner -->
+    <CookieBanner />
   </body>
 </html>

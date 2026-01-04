@@ -30,7 +30,7 @@ const kierunkiCol3 = [
 ];
 
 const prawne = [
-  //{ href: '/regulamin', label: 'Regulamin' },
+  { href: '/regulamin', label: 'Regulamin' },
   { href: '/polityka-prywatnosci', label: 'Polityka prywatności' },
 ];
 ---
@@ -135,11 +135,17 @@ const prawne = [
               {link.label}
             </a>
           ))}
+          <button
+            onclick="openCookieSettings()"
+            class="text-gray-500 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors cursor-pointer"
+          >
+            🍪 Cookies
+          </button>
         </div>
         <span class="text-gray-300 dark:text-gray-700">|</span>
         <p class="text-gray-500 dark:text-gray-500 text-sm">
-        Made by <a href="https://www.torweb.pl" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:underline">TorWeb.pl</a>
-      </p>
+          Powered by <a href="https://smart-edu.ai" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:underline">Smart-Edu.ai</a>
+        </p>
       </div>
     </div>
   </div>

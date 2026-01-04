@@ -1,0 +1,78 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const seoTitle = "Polityka prywatności | Prace-Magisterskie.pl";
+const seoDescription = "Polityka prywatności serwisu Prace-Magisterskie.pl. Informacje o przetwarzaniu danych osobowych i wykorzystaniu plików cookies.";
+---
+
+<Layout title={seoTitle} description={seoDescription}>
+  <section class="pt-32 pb-16 md:pt-40 md:pb-24">
+    <div class="container-custom">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-display font-bold text-gray-900 dark:text-white mb-8">
+          Polityka prywatności
+        </h1>
+        
+        <div class="prose dark:prose-invert max-w-none">
+          <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
+            Ostatnia aktualizacja: {new Date().toLocaleDateString('pl-PL')}
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-gray-900 dark:text-white mt-8 mb-4">1. Administrator danych</h2>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            Administratorem danych osobowych jest właściciel serwisu Prace-Magisterskie.pl. Kontakt z administratorem możliwy jest poprzez formularz kontaktowy na stronie.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-gray-900 dark:text-white mt-8 mb-4">2. Jakie dane zbieramy</h2>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            W ramach korzystania z serwisu możemy zbierać następujące dane:
+          </p>
+          <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mb-4 space-y-2">
+            <li>Adres IP</li>
+            <li>Dane przeglądarki i urządzenia</li>
+            <li>Dane dotyczące aktywności na stronie (analityka)</li>
+            <li>Dane podane przez użytkownika w formularzach kontaktowych</li>
+          </ul>
+
+          <h2 class="text-2xl font-display font-bold text-gray-900 dark:text-white mt-8 mb-4">3. Pliki cookies</h2>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            Serwis wykorzystuje pliki cookies w następujących celach:
+          </p>
+          <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mb-4 space-y-2">
+            <li><strong>Niezbędne</strong> - wymagane do prawidłowego działania strony</li>
+            <li><strong>Analityczne</strong> - Google Analytics do analizy ruchu na stronie</li>
+            <li><strong>Marketingowe</strong> - do personalizacji reklam i remarketingu</li>
+          </ul>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            Użytkownik może w każdej chwili zmienić ustawienia cookies klikając przycisk 
+            <button onclick="openCookieSettings()" class="text-primary-600 dark:text-primary-400 hover:underline cursor-pointer">Ustawienia cookies</button>.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-gray-900 dark:text-white mt-8 mb-4">4. Google Analytics i Google Tag Manager</h2>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            Korzystamy z usług Google Analytics (GA4) oraz Google Tag Manager do analizy ruchu na stronie. Dane są zbierane wyłącznie po wyrażeniu zgody przez użytkownika (Consent Mode v2).
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-gray-900 dark:text-white mt-8 mb-4">5. Prawa użytkownika</h2>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            Zgodnie z RODO, użytkownikowi przysługują następujące prawa:
+          </p>
+          <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mb-4 space-y-2">
+            <li>Prawo dostępu do danych</li>
+            <li>Prawo do sprostowania danych</li>
+            <li>Prawo do usunięcia danych ("prawo do bycia zapomnianym")</li>
+            <li>Prawo do ograniczenia przetwarzania</li>
+            <li>Prawo do przenoszenia danych</li>
+            <li>Prawo do sprzeciwu</li>
+            <li>Prawo do cofnięcia zgody w dowolnym momencie</li>
+          </ul>
+
+          <h2 class="text-2xl font-display font-bold text-gray-900 dark:text-white mt-8 mb-4">6. Kontakt</h2>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            W sprawach związanych z ochroną danych osobowych można kontaktować się z administratorem poprzez formularz kontaktowy na stronie lub kierując korespondencję na adres email podany w stopce strony.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
