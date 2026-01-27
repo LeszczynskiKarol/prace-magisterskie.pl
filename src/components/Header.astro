@@ -5,6 +5,8 @@ const navLinks = [
 //  { href: '/jak-to-dziala', label: 'Jak to działa' },
 //  { href: '/blog', label: 'Blog' },
 ];
+
+const ebookUrl = "https://www.praca-magisterska.pl/sklep/praca-magisterska-ebook/";
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800">
@@ -37,6 +39,18 @@ const navLinks = [
             {link.label}
           </a>
         ))}
+        
+        <!-- Ebook Link -->
+        <a
+          href={ebookUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center gap-1.5 font-medium text-violet-600 dark:text-violet-400 hover:text-violet-700 dark:hover:text-violet-300 transition-colors"
+        >
+          <span>📚</span>
+          <span>Ebook</span>
+          <span class="bg-violet-100 dark:bg-violet-900/50 text-violet-700 dark:text-violet-300 text-xs font-bold px-1.5 py-0.5 rounded">39 zł</span>
+        </a>
       </div>
 
       <!-- Actions -->
@@ -57,18 +71,18 @@ const navLinks = [
           </svg>
         </button>
 
-        <!-- CTA Button -->
+        <!-- CTA Button 
         <a 
           href="https://smart-edu.ai" 
           target="_blank" 
           rel="noopener noreferrer"
           class="hidden sm:inline-flex btn-primary text-sm"
         >
-          Wypróbuj Smart-Edu.ai
+          Wygeneruj pracę z AI
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>
-        </a>
+        </a>-->
 
         <!-- Mobile Menu Button -->
         <button 
@@ -94,6 +108,26 @@ const navLinks = [
             {link.label}
           </a>
         ))}
+        
+        <!-- Mobile: Ebook Promo -->
+        <a
+          href={ebookUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-between px-4 py-3 bg-violet-50 dark:bg-violet-900/20 rounded-xl border border-violet-200 dark:border-violet-800"
+        >
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">📚</span>
+            <div>
+              <div class="text-sm font-semibold text-gray-900 dark:text-white">Ebook: Praca magisterska</div>
+              <div class="text-xs text-gray-500 dark:text-gray-400">Kompletny poradnik PDF</div>
+            </div>
+          </div>
+          <div class="bg-violet-600 text-white text-sm font-bold px-2 py-1 rounded">
+            39 zł
+          </div>
+        </a>
+        
         <a 
           href="https://smart-edu.ai" 
           target="_blank" 
