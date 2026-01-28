@@ -98,7 +98,7 @@ export const subjects: Subject[] = [
       "Metody input-output",
       "Analiza kosztów i korzyści",
     ],
-    relatedSubjects: ["finanse", "zarzadzanie", "marketing"],
+    relatedSubjects: ["zarzadzanie", "marketing"],
   },
   {
     name: "Filologia angielska",
@@ -160,36 +160,7 @@ export const subjects: Subject[] = [
     ],
     relatedSubjects: ["kulturoznawstwo", "historia", "pedagogika"],
   },
-  {
-    name: "Finanse",
-    slug: "finanse",
-    icon: "💰",
-    description:
-      "Pisanie prac magisterskich z finansów na zamówienie. Finanse przedsiębiorstw, bankowość, rynki kapitałowe, inwestycje.",
-    longDescription:
-      "Finanse to dziedzina zajmująca się zarządzaniem pieniędzmi, inwestycjami oraz instrumentami finansowymi. Prace magisterskie z finansów wymagają umiejętności analizy finansowej, znajomości rynków kapitałowych oraz narzędzi wyceny. Nasz asystent AI pomoże Ci stworzyć profesjonalną pracę z właściwymi analizami finansowymi.",
-    topics: [
-      "Finanse przedsiębiorstw",
-      "Bankowość i instytucje finansowe",
-      "Rynki kapitałowe",
-      "Zarządzanie portfelem inwestycyjnym",
-      "Analiza finansowa",
-      "Finanse publiczne",
-      "Finanse behawioralne",
-      "Wycena przedsiębiorstw",
-      "Zarządzanie ryzykiem finansowym",
-      "Finanse międzynarodowe",
-    ],
-    methodologies: [
-      "Analiza wskaźnikowa",
-      "Wycena DCF",
-      "Analiza techniczna i fundamentalna",
-      "Modelowanie finansowe",
-      "Value at Risk (VaR)",
-      "Analiza portfelowa",
-    ],
-    relatedSubjects: ["ekonomia", "zarzadzanie", "rachunkowosc"],
-  },
+
   {
     name: "Historia",
     slug: "historia",
@@ -553,7 +524,7 @@ export const subjects: Subject[] = [
       "Benchmarking",
       "Analiza SWOT i PESTEL",
     ],
-    relatedSubjects: ["ekonomia", "marketing", "finanse", "logistyka"],
+    relatedSubjects: ["ekonomia", "marketing", "logistyka"],
   },
 ];
 
