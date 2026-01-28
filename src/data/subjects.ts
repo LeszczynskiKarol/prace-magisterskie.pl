@@ -158,38 +158,7 @@ export const subjects: Subject[] = [
       "Analiza historycznoliteracka",
       "Badania korpusowe",
     ],
-    relatedSubjects: ["kulturoznawstwo", "historia", "pedagogika"],
-  },
-
-  {
-    name: "Historia",
-    slug: "historia",
-    icon: "📜",
-    description:
-      "Pisanie prac magisterskich z historii na zamówienie. Historia Polski, historia powszechna, historia sztuki, archeologia.",
-    longDescription:
-      "Historia to nauka badająca przeszłość ludzkości na podstawie źródeł historycznych. Prace magisterskie z historii wymagają umiejętności krytycznej analizy źródeł, znajomości historiografii oraz metodologii badań historycznych. Nasz asystent AI pomoże Ci napisać profesjonalną pracę magisterską z historii.",
-    topics: [
-      "Historia Polski",
-      "Historia powszechna",
-      "Historia średniowieczna",
-      "Historia nowożytna",
-      "Historia najnowsza",
-      "Historia regionalna",
-      "Historia gospodarcza",
-      "Historia wojskowości",
-      "Historia kultury",
-      "Historiografia",
-    ],
-    methodologies: [
-      "Analiza źródeł historycznych",
-      "Krytyka źródła",
-      "Metoda porównawcza",
-      "Analiza archiwalna",
-      "Historia mówiona (oral history)",
-      "Analiza ikonograficzna",
-    ],
-    relatedSubjects: ["politologia", "socjologia", "kulturoznawstwo"],
+    relatedSubjects: ["kulturoznawstwo", "pedagogika"],
   },
   {
     name: "Informatyka",
@@ -249,7 +218,7 @@ export const subjects: Subject[] = [
       "Badania recepcji",
       "Analiza wizualna",
     ],
-    relatedSubjects: ["socjologia", "filologia-polska", "historia"],
+    relatedSubjects: ["socjologia", "filologia-polska"],
   },
   {
     name: "Logistyka",
