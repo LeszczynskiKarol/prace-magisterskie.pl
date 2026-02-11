@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://prace-magisterskie.pl/sitemap.xml
+Sitemap: https://www.prace-magisterskie.pl/sitemap.xml
